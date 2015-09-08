@@ -1,0 +1,21 @@
+\tocdepth@munge 
+\contentsline {section}{\numberline {}Contents}{2}{}
+\tocdepth@restore 
+\contentsline {section}{\numberline {I}Introduction}{3}{}
+\contentsline {section}{\numberline {II}Physics Motivation}{3}{}
+\contentsline {subsection}{\numberline {A}Double Deep Virtual Compton Scattering}{3}{}
+\contentsline {subsection}{\numberline {B}J/$\Psi $ Electroproduction}{13}{}
+\contentsline {subsection}{\numberline {C}$J/\psi $ production near threshold}{13}{}
+\contentsline {subsection}{\numberline {D}Impact on the DDVCS measurement}{14}{}
+\contentsline {section}{\numberline {III}The Experiment}{15}{}
+\contentsline {subsection}{\numberline {A}Detector Configuration}{15}{}
+\contentsline {subsection}{\numberline {B}Background Studies and Luminosity Limits}{18}{}
+\contentsline {section}{\numberline {IV}Cross Sections, Acceptances, and Expected Rates}{18}{}
+\contentsline {subsection}{\numberline {A}DDVCS Cross Section and Expected Rates}{18}{}
+\contentsline {subsection}{\numberline {B}J/$\Psi $ Electroproduction}{21}{}
+\contentsline {subsubsection}{\numberline {1}Cross Section Formalism.}{24}{}
+\contentsline {subsubsection}{\numberline {2}Acceptance simulations for J/$\Psi $}{28}{}
+\contentsline {subsubsection}{\numberline {3}Rates and projected results}{32}{}
+\contentsline {section}{\numberline {V}Beam Time Estimate}{33}{}
+\contentsline {section}{\numberline {VI}Summary}{33}{}
+\contentsline {section}{\numberline {}References}{33}{}

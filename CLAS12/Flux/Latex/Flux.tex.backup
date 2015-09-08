@@ -1,0 +1,100 @@
+\documentclass[letterpaper,12pt]{article}
+%documentclass[superscriptaddress,preprintnumbers,amsmath,amssymb,aps,11pt]{revtex4}
+%\usepackage[]{authblk}
+%\usepackage{graphics}
+\usepackage[dvipdf]{graphicx}
+%\usepackage{subfig}  % For subfloats
+\usepackage{color}
+\usepackage[backend=bibtex]{biblatex}
+
+\usepackage{epsfig}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\oddsidemargin = -14mm
+\topmargin = -2.9cm
+\textwidth = 19cm
+\textheight = 24cm
+
+\def \rarr {\rightarrow}
+\def \grinp {\includegraphics}
+\def \tw {\textwidth}
+\def\dfrac#1#2{\displaystyle{{#1}\over{#2}}}
+\def \dstl {\displaystyle}
+\definecolor{GREEN}{rgb}{0.,0.8,0}
+\definecolor{RED}{rgb}{1,0,0}
+\definecolor{ORANGE}{rgb}{1,0.5,0}
+
+
+\begin{document}
+ \section{ Photon Flux }
+ In the electroproduction when the virtuality of the transferred photon is small $Q^{2} \sim 0$,  
+ the electroproduction cross-section can be parametrized through the photoproduction cross-section and the
+ virtual photon flux.
+ \begin{equation}
+  \sigma_{e} = N_{\gamma}(E_{\gamma})\sigma_{\gamma}
+ \end{equation}
+ where $\sigma_{e}$ is the electroproduction cross-section, $\sigma_{\gamma}$ is
+ the photoproduction cross-section, and the $N_{\gamma}(E_{\gamma})$ is a flux of virtual photon, that represents
+ Number of virtual photons in the unit range of photon energy. This is known as
+ Equivalent Photon Approximation (EPA).
+ 
+ In the electroproduction experiments, beam electrons will produce Bremsstrahlung photons in the target also,
+ the flux of that photons is proportional to the target length.
+ When the target length is not very small (w.r.t radiation  length of the target), then real photon flux
+ can be significant and one needs to consider that also.
+ 
+ The effective flux of photns therefore will be the sum of quasi-real (Virtual photon) and real
+ (Bremsstrahlung) photon fluxes.
+ 
+ The virtual photon flux is calculated using the following
+ equation \cite{Phot_Flux1}
+ \begin{equation}
+  N(E_{\gamma}) = \frac{1}{E_{b}} \frac{\alpha}{\pi\cdot x}
+  \cdot\left( (1 - x + \frac{x^{2}}{2})\cdot log(\frac{Q^{2}_{max}}{Q^{2}_{min}}) - (1 - x)\right)
+ % (1/Eb)*\alpha/(PI*x)*( (1 - x + x*x/2)*log(\frac{Q2_{max}}{Q2_{min}}) - (1 - x));
+ \end{equation}
+
+where $E_{b}$ is the beam energy, $E_{\gamma}$ is the photon energy, $x = \dfrac{E_{\gamma}}{E_{b}}$, 
+$Q^{2}_{min}$ is kinematically allowed minimum value of $Q^{2}_{min}$, and $Q^{2}_{max}$ is the
+cut off value on $Q^{2}$. 
+ 
+ When electron passes a metter of the length $dx$, the number of Bremsstrahlung photons
+ with a good approximation can be calculated using the following forula \cite{PDG} (section: passage of
+ particles through the matter).
+ \begin{equation}
+  N(E_{\gamma}) = \frac{dx}{X_{0}}\frac{1}{E_{\gamma}}\cdot\left( \frac{4}{3} - \frac{4}{3}\frac{E_{\gamma}}{E_{b}} 
+   + \frac{E_{\gamma}^{2}}{E_{b}^{2}}\right)
+   \label{eq:Bremsstr}
+ \end{equation}
+Here $X_{0}$ is the radiation length.
+
+In the Bremsstrahlung case, when the photon is produced at x distance from the beginning of the target,
+then it will travel only $l-x$ distance in the target ($l$  is the target length). Taking into account this,
+in the luminosity calculation one need to take the integral $\dstl \int_{0}^{l} N(E_{\gamma})\cdot(l - x) dx $.
+After calculating the integral, one finds that the effective flux will be
+ \begin{equation}
+  N(E_{\gamma}) = \frac{l}{2\cdot X_{0}}\frac{1}{E_{\gamma}}\cdot\left( \frac{4}{3} - \frac{4}{3}\frac{E_{\gamma}}{E_{b}} 
+   + \frac{E_{\gamma}^{2}}{E_{b}^{2}}\right)
+   \label{eq:Bremsstr_eff}
+ \end{equation}
+
+\begin{figure}[!htb]
+ \centering
+ \grinp[width=0.75\tw]{img/Virt_Brem_Fluxes.pdf}
+ \caption{ Virtual (red) and Real (blue) photon fluxes as a function of photon energy.}
+ \label{fig:fluxes}
+\end{figure}
+
+ In. Fig.\ref{fig:fluxes} shown virtual (red) and real (blue) photon fluxes as a function of photon energy.
+ Note in the calculations target langth was taken $15\;cm$ and the $Q^{2}_{max} = 0.1\; GeV^{2}$.
+ For the total integrated flux in the $E_{\gamma}\in(9. - 11)\; GeV$ range 
+ 
+ \begin{thebibliography}{45}
+  \bibitem{Phot_Flux1} \url{ http://lss.fnal.gov/archive/other/lpc-94-35.pdf}
+  \bibitem{PDG} Chin. Phys. C, 38, 090001 (2014)
+ \end{thebibliography}
+
+\end{document}

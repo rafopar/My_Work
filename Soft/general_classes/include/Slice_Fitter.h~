@@ -1,0 +1,35 @@
+#ifndef __SLICEFITTER__
+#define __SLICEFITTER__
+
+#include "TObject.h"
+#include <TF1.h>
+#include <TH1D.h>
+#include <TH2D.h>
+#include <TGraphErrors.h>
+
+class string;
+
+class TSlice_Fitter : public TObject
+{
+ public:
+  TSlice_Fitter();
+  TSlice_Fitter(TH2D* inp_hist, const std::string keyname, TF1* fit_function, int n_slices, double x_min, double x_max);
+  void SetAll(TH2D* inp_hist, const std::string keyname, TF1* fit_function, int n_slices, double x_min, double x_max);
+  void Do_SliceFit();
+  TGraphErrors *GetGrMean();
+  TGraphErrors *GetGrSigm();
+  
+  ClassDef(TSlice_Fitter, 1);
+  
+ private:
+  double fx_min, fx_max;
+  TF1 *ff_Gaus;
+  TH2D *fh_2D;
+  std::string fkey_name;
+  int fn_slices;
+  TGraphErrors *fgr_mean;
+  TGraphErrors *fgr_sigm;
+  TH1D **fh_proj;
+};
+
+#endif

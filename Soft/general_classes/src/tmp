@@ -1,0 +1,218 @@
+// Do NOT change. Changes will be lost next time file is generated
+
+#define R__DICTIONARY_FILENAME srcdISliceFitterDict
+
+/*******************************************************************/
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <assert.h>
+#define G__DICTIONARY
+#include "RConfig.h"
+#include "TClass.h"
+#include "TDictAttributeMap.h"
+#include "TInterpreter.h"
+#include "TROOT.h"
+#include "TBuffer.h"
+#include "TMemberInspector.h"
+#include "TInterpreter.h"
+#include "TVirtualMutex.h"
+#include "TError.h"
+
+#ifndef G__ROOT
+#define G__ROOT
+#endif
+
+#include "RtypesImp.h"
+#include "TIsAProxy.h"
+#include "TFileMergeInfo.h"
+#include <algorithm>
+#include "TCollectionProxyInfo.h"
+/*******************************************************************/
+
+#include "TDataMember.h"
+
+// Since CINT ignores the std namespace, we need to do so in this file.
+namespace std {} using namespace std;
+
+// Header files passed as explicit arguments
+#include "include/Slice_Fitter.h"
+
+// Header files passed via #pragma extra_include
+
+namespace ROOT {
+   static void *new_Slice_Fitter(void *p = 0);
+   static void *newArray_Slice_Fitter(Long_t size, void *p);
+   static void delete_Slice_Fitter(void *p);
+   static void deleteArray_Slice_Fitter(void *p);
+   static void destruct_Slice_Fitter(void *p);
+   static void streamer_Slice_Fitter(TBuffer &buf, void *obj);
+
+   // Function generating the singleton type initializer
+   static TGenericClassInfo *GenerateInitInstanceLocal(const ::Slice_Fitter*)
+   {
+      ::Slice_Fitter *ptr = 0;
+      static ::TVirtualIsAProxy* isa_proxy = new ::TInstrumentedIsAProxy< ::Slice_Fitter >(0);
+      static ::ROOT::TGenericClassInfo 
+         instance("Slice_Fitter", ::Slice_Fitter::Class_Version(), "include/Slice_Fitter.h", 11,
+                  typeid(::Slice_Fitter), DefineBehavior(ptr, ptr),
+                  &::Slice_Fitter::Dictionary, isa_proxy, 16,
+                  sizeof(::Slice_Fitter) );
+      instance.SetNew(&new_Slice_Fitter);
+      instance.SetNewArray(&newArray_Slice_Fitter);
+      instance.SetDelete(&delete_Slice_Fitter);
+      instance.SetDeleteArray(&deleteArray_Slice_Fitter);
+      instance.SetDestructor(&destruct_Slice_Fitter);
+      instance.SetStreamerFunc(&streamer_Slice_Fitter);
+      return &instance;
+   }
+   TGenericClassInfo *GenerateInitInstance(const ::Slice_Fitter*)
+   {
+      return GenerateInitInstanceLocal((::Slice_Fitter*)0);
+   }
+   // Static variable to force the class initialization
+   static ::ROOT::TGenericClassInfo *_R__UNIQUE_(Init) = GenerateInitInstanceLocal((const ::Slice_Fitter*)0x0); R__UseDummy(_R__UNIQUE_(Init));
+} // end of namespace ROOT
+
+//______________________________________________________________________________
+atomic_TClass_ptr Slice_Fitter::fgIsA(0);  // static to hold class pointer
+
+//______________________________________________________________________________
+const char *Slice_Fitter::Class_Name()
+{
+   return "Slice_Fitter";
+}
+
+//______________________________________________________________________________
+const char *Slice_Fitter::ImplFileName()
+{
+   return ::ROOT::GenerateInitInstanceLocal((const ::Slice_Fitter*)0x0)->GetImplFileName();
+}
+
+//______________________________________________________________________________
+int Slice_Fitter::ImplFileLine()
+{
+   return ::ROOT::GenerateInitInstanceLocal((const ::Slice_Fitter*)0x0)->GetImplFileLine();
+}
+
+//______________________________________________________________________________
+TClass *Slice_Fitter::Dictionary()
+{
+   fgIsA = ::ROOT::GenerateInitInstanceLocal((const ::Slice_Fitter*)0x0)->GetClass();
+   return fgIsA;
+}
+
+//______________________________________________________________________________
+TClass *Slice_Fitter::Class()
+{
+   if (!fgIsA.load()) { R__LOCKGUARD2(gInterpreterMutex); fgIsA = ::ROOT::GenerateInitInstanceLocal((const ::Slice_Fitter*)0x0)->GetClass(); }
+   return fgIsA;
+}
+
+//______________________________________________________________________________
+void Slice_Fitter::Streamer(TBuffer &R__b)
+{
+   // Stream an object of class Slice_Fitter.
+
+   UInt_t R__s, R__c;
+   if (R__b.IsReading()) {
+      Version_t R__v = R__b.ReadVersion(&R__s, &R__c); if (R__v) { }
+      TObject::Streamer(R__b);
+      R__b >> fx_min;
+      R__b >> fx_max;
+      R__b >> ff_Gaus;
+      R__b >> fh_2D;
+      { TString R__str; R__str.Streamer(R__b); fkey_name = R__str.Data(); }
+      R__b >> fn_slices;
+      R__b.CheckByteCount(R__s, R__c, Slice_Fitter::IsA());
+   } else {
+      R__c = R__b.WriteVersion(Slice_Fitter::IsA(), kTRUE);
+      TObject::Streamer(R__b);
+      R__b << fx_min;
+      R__b << fx_max;
+      R__b << ff_Gaus;
+      R__b << (TObject*)fh_2D;
+      { TString R__str = fkey_name.c_str(); R__str.Streamer(R__b);}
+      R__b << fn_slices;
+      R__b.SetByteCount(R__c, kTRUE);
+   }
+}
+
+namespace ROOT {
+   // Wrappers around operator new
+   static void *new_Slice_Fitter(void *p) {
+      return  p ? new(p) ::Slice_Fitter : new ::Slice_Fitter;
+   }
+   static void *newArray_Slice_Fitter(Long_t nElements, void *p) {
+      return p ? new(p) ::Slice_Fitter[nElements] : new ::Slice_Fitter[nElements];
+   }
+   // Wrapper around operator delete
+   static void delete_Slice_Fitter(void *p) {
+      delete ((::Slice_Fitter*)p);
+   }
+   static void deleteArray_Slice_Fitter(void *p) {
+      delete [] ((::Slice_Fitter*)p);
+   }
+   static void destruct_Slice_Fitter(void *p) {
+      typedef ::Slice_Fitter current_t;
+      ((current_t*)p)->~current_t();
+   }
+   // Wrapper around a custom streamer member function.
+   static void streamer_Slice_Fitter(TBuffer &buf, void *obj) {
+      ((::Slice_Fitter*)obj)->::Slice_Fitter::Streamer(buf);
+   }
+} // end of namespace ROOT for class ::Slice_Fitter
+
+namespace {
+  void TriggerDictionaryInitialization_SliceFitterDict_Impl() {
+    static const char* headers[] = {
+"include/Slice_Fitter.h",
+0
+    };
+    static const char* includePaths[] = {
+"/usr/local/ROOT/root-6.04.02/include",
+"/Work/Soft/general_classes/",
+0
+    };
+    static const char* fwdDeclCode = 
+R"DICTFWDDCLS(
+#pragma clang diagnostic ignored "-Wkeyword-compat"
+#pragma clang diagnostic ignored "-Wignored-attributes"
+#pragma clang diagnostic ignored "-Wreturn-type-c-linkage"
+extern int __Cling_Autoloading_Map;
+class __attribute__((annotate("$clingAutoload$include/Slice_Fitter.h")))  Slice_Fitter;
+)DICTFWDDCLS";
+    static const char* payloadCode = R"DICTPAYLOAD(
+
+#ifndef G__VECTOR_HAS_CLASS_ITERATOR
+  #define G__VECTOR_HAS_CLASS_ITERATOR 1
+#endif
+
+#define _BACKWARD_BACKWARD_WARNING_H
+#include "include/Slice_Fitter.h"
+
+#undef  _BACKWARD_BACKWARD_WARNING_H
+)DICTPAYLOAD";
+    static const char* classesHeaders[]={
+"Slice_Fitter", payloadCode, "@",
+nullptr};
+
+    static bool isInitialized = false;
+    if (!isInitialized) {
+      TROOT::RegisterModule("SliceFitterDict",
+        headers, includePaths, payloadCode, fwdDeclCode,
+        TriggerDictionaryInitialization_SliceFitterDict_Impl, {}, classesHeaders);
+      isInitialized = true;
+    }
+  }
+  static struct DictInit {
+    DictInit() {
+      TriggerDictionaryInitialization_SliceFitterDict_Impl();
+    }
+  } __TheDictionaryInitializer;
+}
+void TriggerDictionaryInitialization_SliceFitterDict() {
+  TriggerDictionaryInitialization_SliceFitterDict_Impl();
+}

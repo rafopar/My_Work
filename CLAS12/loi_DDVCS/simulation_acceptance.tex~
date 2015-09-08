@@ -1,0 +1,98 @@
+\label{acc_simulations}
+\indent
+
+The acceptance and resolution have been simulated using a modified version of the CLAS12 fast MC code \cite{fastmc}. A change was made to the CLAS12 FD simulation for angular resolution (for muons) due to multiple scattering in the shielding/absorber. The momentum of tracks in FD will be measure with forward drift chambers, then additional energy loss corrections in the absorber will be needed to calculate momentum at the production vertex. The angles will be smeared due to multiple scattering that cannot be recovered, the effect of the multiple scattering will contribute in the angular resolution, worsening it by $\times 2$. 
+
+For electron detection a new detector was introduced in fast MC. The geometrical acceptance of the detector was confined within $\theta=5^\circ$ to $35^\circ$ and $\phi=0^\circ$ to $60^\circ$, where $\theta$ and $\phi$ are polar and azimuthal angle of particle,respectively. The energy resolution of $\sigma_E/E=3\%/\sqrt(E)$ and the angular resolution of $\sigma_{\theta(\phi)}=2$ mrad were taken from the analysis performance of a similar calorimeter used for the Hall-B HPS experiment \cite{HPS}.
+
+As an event generator a simple kinematic simulator is used. The generator simulates multiparticle final states in photo- or electroproduction reactions, has correct decay channels and branching ratios for most of particles in PDG (Lund/Jetset) and allows to set the kinematic dependancies. The reaction $ep\to e^\prime\mu^+\mu^-p^\prime$ was simulated with the following conditions (see Fig.\ref{fig:sim_init}):
+\begin{itemize}
+\item beam energy $E=11$ GeV
+\item $1\over{Q^4}$ for electron four momentum transferred squared dependence ($Q^2=-q^2=-(k_i-k_f)^2$, where $k_{i(f)}$ is the initial (final) four momentum of the electron)
+\item $e^{3t}$ dependance was used for the squared four-momentum transfer from initial to final state proton, ($t=(p_i-p_f)^2$, where $p_i$ and $p_f$ are four momenta of the initial and final state protons)
+\end{itemize}
+
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[width=1\textwidth]{sim.pdf}
+\caption{Distributions of virtual photon energy, electron transferred momentum squared, Q$^2$, transferred momentum squared from initial to final state proton, $t$, and the invariant mass squared of muon pairs, Q$^{\prime 2}$, vs Q$^2$.}
+\label{fig:sim_init}
+\end{center}
+\end{figure}
+
+Figurs \ref{fig:ep_kin} and \ref{fig:kin_edetected} show scattering angle vs. momentum distributions for final state electrons, protons, and muons. As one can see most of final state particles are produced in forward region, including protons in the relevant kinematic range, Q$^{\prime 2}>4$ GeV$^2$. Therefore, we will not use the CLAS12 detector for detection for particle detection, only solenoid will be used as a shield from M\"oller electrons. The detected final state will be composed of $e\mu^+\mu^-$. The recoiling proton will be reconstructed from the missing momentum analysis. 
+
+\begin{figure}[htp]
+\begin{center}
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=1.\textwidth]{sim_e.pdf}  
+\vspace{-0.5cm}
+\caption{Scattered electron angle vs. momentum.}
+\end{subfigure} 
+\begin{subfigure}{0.47\textwidth}
+\includegraphics[width=1.03\textwidth]{sim_p.pdf}
+\caption{Recoil proton angle vs. momentum for M($\mu^+\mu^-$) $>~2$ GeV.}
+\end{subfigure} 
+\caption{Kinematic of the scattered electron and the recoil proton.}
+\label{fig:ep_kin}
+\end{center}
+\end{figure}
+
+The momentum vs. angle distributions for $\mu^+$ and $\mu^-$, detected in the CLAS12 FD and the electron in the calorimeter, final state ($e\mu^+\mu^-$), are shown in Fig.\ref{fig:mu_detect}. The Q$^{\prime 2}$ vs. Q$^2$ coverage when all three particles are detected is shown on the left graph of Fig.\ref{fig:q2_acc}. The graph on the right shows acceptance values in color coding. The ellipsoidal region shown with black line on the graph is the highest acceptance region for DDVCS studies. The average acceptance is $\sim 3.5\%$ for Q$^{\prime 2}>4$ GeV$^2$ and Q$^2>1$ GeV$^2$ region. As can be seen from the same graph, the Q$^2$ range for J$/\Psi$ production extends up to Q$^2\simeq2.5$ GeV$^2$ with average acceptance of $\sim 4\%$.   
+
+\begin{figure}[ht]
+\begin{center}
+\begin{subfigure}{0.49\textwidth}
+\includegraphics[width=1.\textwidth]{qp2_q2g_edetected.pdf}
+\caption{The distribution of Q$^{\prime 2}$ vs. Q$^2$ .}
+\end{subfigure}
+\begin{subfigure}{0.47\textwidth}
+\includegraphics[width=1.\textwidth]{theta_p_mu_edetected.pdf}
+\caption{Decay muon angle vs. momentum.}
+\end{subfigure}
+\caption{Muon kinematics for events with electron in the angular rage $\theta=5^\circ - 35^\circ$ and $\phi=0^\circ - 60^\circ$.}
+\label{fig:kin_edetected}
+\end{center}
+\end{figure}
+
+The detector resolution is less critical parameter for DDVCS but nevertheless it should be good enough to select events in the reaction $ep\to e^\prime \mu^+ \mu^- p$. A cut on the missing mass of the ($e^\prime \mu^+ \mu^-$) final state can be used to identify the DDVCS events. In Fig.\ref{fig:res} expected mass resolutions of CLAS12 with above mentioned modifications are shown. The missing mass distribution of the recoil proton is shown on the right graph, on the left we show resolution in invariant mass of muon pairs for two mass regions, $2.1$ GeV and $3.1$ GeV. The expected resolutions for missing and invariant masses are adequate for identification of the exclusive final state and for identification of the J/$\Psi$ meson (see below). 
+
+\begin{figure}[]
+\begin{center}
+\begin{subfigure}[b]{0.49\linewidth}
+\includegraphics[width=1.\textwidth]{mum_p_theta.pdf}  
+\caption{Momentum vs. angle for $\mu^-$.}
+\end{subfigure} 
+\begin{subfigure}[b]{0.49\linewidth}
+\includegraphics[width=1.\textwidth]{mup_p_theta.pdf}
+\caption{Momentum vs. angle for $\mu^+$.}
+\end{subfigure} 
+\caption{Kinematics of muons for detected $e^\prime\mu^+\mu^-$ final state.}
+\label{fig:mu_detect}
+\end{center}
+\end{figure}
+
+\begin{figure}[bp]
+\begin{center}
+\begin{subfigure}[b]{0.485\linewidth}
+\centering
+\includegraphics[width=1.\textwidth]{q2p_q2_detected.pdf}
+\end{subfigure}
+\begin{subfigure}[b]{0.49\linewidth}
+\centering
+\includegraphics[width=1.1\textwidth]{q2g_q2_acceptance.pdf}
+\end{subfigure}
+\caption{On the left distribution of the Q$^{\prime 2}$ vs. Q$^2$ for accepted events with $e^\prime \mu^+ \mu^-$ final state. On the right the same distribution but the color scale represents the acceptance values.}
+\label{fig:q2_acc}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=.9\textwidth]{mass_resolutions.pdf}
+\caption{Expected mass resolutions: left for the invariant mass of muon pairs, right the missing mass squared for the reaction $ep\to e^\prime \mu^+ \mu^- (p)$.}
+\label{fig:res}
+\end{center}
+\end{figure}
+
+\clearpage

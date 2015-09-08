@@ -1,0 +1,11 @@
+CC              = g++
+CC_OBJ_FLAGS    = -c -fPIC
+CC_Shared_FLAGS = -shared -Wl,-soname,libtcs.so
+ROOT_CFLAGS     = $(shell root-config --cflags)
+ROOT_LIBS       = $(shell root-config --libs)
+
+toollibs:
+		$(CC) $(CC_Shared_FLAGS) -o libtcs.so.1.0.1 TTCS_kine.o kin_funcs.o TTCS_crs.o TGFlux.o GPDs.o TCLASChargedParticle.o cc_eff_funcs.o
+
+clean:          
+              rm -f *.so* *.o

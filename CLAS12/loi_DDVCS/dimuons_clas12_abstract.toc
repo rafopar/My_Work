@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Physics Motivation}{3}
+\contentsline {subsection}{\numberline {2.1}Double Deep Virtual Compton Scattering}{3}
+\contentsline {subsection}{\numberline {2.2}J/$\Psi $ Electroproduction}{3}
+\contentsline {section}{\numberline {3}The Experiment}{3}
+\contentsline {subsection}{\numberline {3.1}Detector Configuration}{3}
+\contentsline {subsection}{\numberline {3.2}Backcground Studies}{3}

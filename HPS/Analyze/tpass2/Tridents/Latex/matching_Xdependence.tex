@@ -1,0 +1,128 @@
+\documentclass[letterpaper,12pt]{article}
+%documentclass[superscriptaddress,preprintnumbers,amsmath,amssymb,aps,11pt]{revtex4}
+%\usepackage[]{authblk}
+%\usepackage{graphics}
+\usepackage[dvipdf]{graphicx}
+%\usepackage{subfig}  % For subfloats
+\usepackage{color}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{epsfig}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage{caption}
+%\usepackage{subcaption}
+\usepackage{subfig}
+\usepackage{authblk}
+
+\oddsidemargin = -14mm
+\topmargin = -2.9cm
+\textwidth = 19cm
+\textheight = 24cm
+
+\def \rarr {\rightarrow}
+\def \grinp {\includegraphics}
+\def \tw {\textwidth}
+\def\dfrac#1#2{\displaystyle{{#1}\over{#2}}}
+\def \dstl {\displaystyle}
+\definecolor{GREEN}{rgb}{0.,0.8,0}
+\definecolor{RED}{rgb}{1,0,0}
+\definecolor{ORANGE}{rgb}{1,0.5,0}
+
+\begin{document}
+All figures here represent run 5772 from tpass2.6, which were cooked on Sunday Sep. 6.
+
+In Fig.\ref{fig:Uncor_2D_Matching}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \begin{figure}[!htb]
+  \centering
+  \subfloat{\label{fig:x_dep_top_neg2}\grinp[width=0.45\tw]{../delt_coord_horiz_Xcl_top_neg2_5772.pdf}}
+  \subfloat{\label{fig:x_dep_top_pos2}\grinp[width=0.45\tw]{../delt_coord_horiz_Xcl_top_pos2_5772.pdf}}\\
+  \subfloat{\label{fig:x_dep_bot_neg2}\grinp[width=0.45\tw]{../delt_coord_horiz_Xcl_bot_neg2_5772.pdf}}
+  \subfloat{\label{fig:x_dep_bot_pos2}\grinp[width=0.45\tw]{../delt_coord_horiz_Xcl_bot_pos2_5772.pdf}}
+  \caption{"$X_{cl} - X_{tr}$ VS $X_{cl}$" distributions for uncorrected clusters.
+  Left column is for negatives and right column
+  is for positives. Bottom row represents tracks/clusters at bottom and top row represents tracks/clusters
+  at top.}
+  \label{fig:Uncor_2D_Matching}
+ \end{figure}
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ shown "$X_{cl} - X_{tr}$ VS $X_{cl}$" distributions for uncorrected clusters.
+  Left column is for negatives and right column
+  is for positives. Bottom row represents tracks/clusters at bottom and top row represents tracks/clusters
+  at top.
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{figure}[!htb]
+ \centering
+  \subfloat{\label{fig:x_dep_top_neg_cor2}\grinp[width=0.45\tw]{../delt_coord_horiz_Xcl_top_neg_ECorr2_5772.pdf}}
+  \subfloat{\label{fig:x_dep_top_pos_cor2}\grinp[width=0.45\tw]{../delt_coord_horiz_Xcl_top_pos_ECorr2_5772.pdf}}\\
+  \subfloat{\label{fig:x_dep_bot_neg_cor2}\grinp[width=0.45\tw]{../delt_coord_horiz_Xcl_bot_neg_ECorr2_5772.pdf}}
+  \subfloat{\label{fig:x_dep_bot_pos_cor2}\grinp[width=0.45\tw]{../delt_coord_horiz_Xcl_bot_pos_ECorr2_5772.pdf}}
+  \caption{"$X_{cl} - X_{tr}$ VS $X_{cl}$" distributions for Corrected clusters.
+  Left Column is for negatives and right column
+  is for positives. Bottom row represents tracks/clusters at bottom and top row represents tracks/clusters
+  at top.}
+  \label{fig:Corr_2D_Matching}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ Same distributions, but for corrected clusters is shown in Fig.\ref{fig:Corr_2D_Matching}.
+ Here also left column is for negatives and right column
+  is for positives. Bottom row represents tracks/clusters at bottom and top row represents tracks/clusters
+  at top.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[!htb]
+ \centering
+ \subfloat{\label{fig:meam_top_neg}\grinp[width=0.45\tw]{../mtgr_mean_delt_cord_trk_horiz_Xcl_top_neg2_5772.pdf}}
+ \subfloat{\label{fig:meam_top_pos}\grinp[width=0.45\tw]{../mtgr_mean_delt_cord_trk_horiz_Xcl_top_pos2_5772.pdf}}\\
+ \subfloat{\label{fig:meam_bot_neg}\grinp[width=0.45\tw]{../mtgr_mean_delt_cord_trk_horiz_Xcl_bot_neg2_5772.pdf}}
+ \subfloat{\label{fig:meam_bot_pos}\grinp[width=0.45\tw]{../mtgr_mean_delt_cord_trk_horiz_Xcl_bot_pos2_5772.pdf}}\\
+ \caption{Mean values of slice fits as a function of cluster $X$ coordinate. Red circles represent 
+ uncorrected clusters, while blue triangles represent corrected clusters. Left (Right) column represent 
+ negative (positive) tracks. Bottom (Top) row represents tracks at bottom (top) module of HPS.}
+ \label{fig:mean_values}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+These distributions then slice-fitted. Mean values of fits as a function of cluster $X$ coordinate are
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[!htb]
+ \centering
+ \subfloat{\label{fig:sigm_top_neg}\grinp[width=0.45\tw]{../mtgr_sigm_delt_cord_trk_horiz_Xcl_top_neg2_5772.pdf}}
+ \subfloat{\label{fig:sigm_top_pos}\grinp[width=0.45\tw]{../mtgr_sigm_delt_cord_trk_horiz_Xcl_top_pos2_5772.pdf}}\\
+ \subfloat{\label{fig:sigm_bot_neg}\grinp[width=0.45\tw]{../mtgr_sigm_delt_cord_trk_horiz_Xcl_bot_neg2_5772.pdf}}
+ \subfloat{\label{fig:sigm_bot_pos}\grinp[width=0.45\tw]{../mtgr_sigm_delt_cord_trk_horiz_Xcl_bot_pos2_5772.pdf}}\\
+  \caption{$\sigma$ values of slice fits as a function of cluster $X$ coordinate. Red circles represent 
+ uncorrected clusters, while blue triangles represent corrected clusters. Left (Right) column represent 
+ negative (positive) tracks. Bottom (Top) row represents tracks at bottom (top) module of HPS.}
+ \label{fig:sigm_values}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+shown in Fig.\ref{fig:mean_values}, where red circles represent 
+ uncorrected clusters, while blue triangles represent corrected clusters. Left (Right) column represent 
+ negative (positive) tracks. Bottom (Top) row represents tracks at bottom (top) module of HPS.
+ 
+ Corresponding $\sigma$ values are shown in Fig.\ref{fig:sigm_values},  where red circles represent 
+ uncorrected clusters, while blue triangles represent corrected clusters. Left (Right) column represent 
+ negative (positive) tracks. Bottom (Top) row represents tracks at bottom (top) module of HPS.
+ 
+ In the figures one can note that blue points don't expand all the region on $X$. This is because
+ the gap in the corrected cluster matching changes the distribution shape, and they are not Gaussian
+ anymore, therefore only regions where side tail effect is small, are fitted.
+ Figures represented above indicate that in general for uncorrected and corrected cluster cases
+ there is a shift w.r.t. $0$ more than $5\;mm$, except for the corrected positives, where shift is 
+ around $2\;mm$.
+ For the bottom module the uncorrected cluster matching is within $\pm 1\;mm$ in the $X_{cl}\in(-170 : 250)\;mm$
+ range, while it is not the case for for corrected cluster matching.
+ The fact that for uncorrected ones it deviates at the edges might be because in the track extrapolation
+ 1D mid-plane field was used, which should be stronger than the real value close to the left and right edges 
+ of the ECal, therefore the extrapolation bended the track more than actually it was bended.
+ 
+ Also corrected cluster matchings for negatives and positives are not consistent 
+ with each other, while for uncorrected ones they seem consistent.
+ 
+ About $\sigma$ values. They look similar for uncorrected and corrected cluster matchings, also
+ for bottom and top. It is about $4-5\;mm$ in the central part of ECal (that also correspond to higher momenta), 
+ and it is about $18\;mm$ at the edges where particle momenta is small and multiple scattering
+ might change track trajectory considerably.
+ 
+\end{document}

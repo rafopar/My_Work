@@ -1,0 +1,199 @@
+
+The Acceptance of the proposed experimental setup and expected rates are discussed in this section.
+To understand whether we will have good enough acceptance and reasonable rates, we performed Monte Carlo simulations 
+of the $ep\rarr e^{\prime}\mu^{-}\mu^{+}p$ reaction. Simulations were limited in the $Q^{2}\in(0.8-7.2)\;GeV^{2}$
+and $Q^{\prime 2}\in(1.8-4.8)\;GeV^{2}$ region.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[!htb]
+ \centering
+ \begin{subfigure}{0.48 \tw}
+  \grinp[width=0.99\tw]{img/Qp2_Q2_gen_general2.pdf}
+  \caption{}
+  \label{fig:Qp2_Q2_gen_general2}
+ \end{subfigure}
+ \begin{subfigure}{0.48 \tw}
+  \grinp[width=0.99\tw]{img/Qp2_Q2_rec_general2.pdf}
+  \caption{}
+  \label{fig:Qp2_Q2_rec_general2}
+ \end{subfigure}\\
+\begin{subfigure}{0.48 \tw}
+  \grinp[width=0.99\tw]{img/Q2_xB_smear2.pdf}
+  \caption{}
+  \label{fig:Q2_xB_smear2}
+ \end{subfigure}
+ \begin{subfigure}{0.48 \tw}
+  \grinp[width=0.99\tw]{img/tM_smear4.pdf}
+  \caption{}
+  \label{fig:tM_smear4}
+ \end{subfigure}
+ \caption{Top row: Generated (left) and reconstructed (right) distributions of "$Q^{\prime 2}$ vs $Q^{2}$".
+ Bottom row: reconstructed "$Q^{2}$ vs $x_{B}$" (left) and $-t$ (right) when  $Q^{2} \in(2.5 - 3)\;GeV^{2}$ and $x_{B}\in(0.13 - 0.17)$.}
+ \label{fig:kinematics_general}
+
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In Fig.\ref{fig:kinematics_general} shown distributions of some kinematic variables: Generated (top left) and reconstructed (top right) 
+"$Q^{\prime 2}$ vs $Q^{2}$" distributions, "$Q^{2}$ vs $x_{B}$" is the bottom left, and the bottom right represent $-t$ distribtion 
+when $Q^{2}$ and $x_{B}$ are in the following region $Q^{2} \in(2.5 - 3)\;GeV^{2}$ and $x_{B}\in(0.11 - 0.2)$.
+
+In this LOI we will present estimated rates and statistical uncertainties of beam spin asymmetries as a function of
+$\Phi_{L}$ by fixing kinematic bin $Q^{2} \in(2. - 3)\;GeV^{2}$, $-t\in (0.1 - 0.4)\; GeV^{2}$, $x_{B}\in(0.11 - 0.2)$, and 
+varying $Q^{\prime 2}$ ($Q^{\prime 2} = {2.,\; 2.8,\;  3.6} \;GeV^{2}$).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MC generator description %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Each generated event contains 7 fold cross section which is used for estimation of rates.
+\begin{equation}
+\frac{\dstl d\sigma}{\dstl dQ^{2} dt dQ^{\prime 2} dx_{B} d\Phi_{L} d\Phi_{cm} d\Theta_{cm}} 
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[!htb]
+ \centering
+ \begin{subfigure}{0.48 \tw}
+  \grinp[width=0.99\tw]{Angles_DDVCS1.pdf}
+  \caption{}
+  \label{fig:DDVCS_Angles1}
+ \end{subfigure}
+ \begin{subfigure}{0.48 \tw}
+  \grinp[width=0.99\tw]{Angles_DDVCS2.pdf}
+  \caption{}
+  \label{fig:DDVCS_Angles2}
+ \end{subfigure}
+\caption{Representation of DDVCS angles. $\Phi_{L}$ is the angle between beam scattering and hadronic planes (left figure), $\Phi_{CM}$ 
+is the angle between decay lepton and hadronic planes (left figure) and $\Theta_{CM}$ (right figure) is the angle of the negative
+decay lepton w.r.t. scattered proton momentum, in the frame where timelike photon is at rest.}
+\label{fig:DDVCS_Angles}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Angles $\Phi_{L}$, $\Phi_{CM}$ and $\Theta_{CM}$ are shown on Fig. \ref{fig:DDVCS_Angles}, and their definition is described in the caption
+of the figure.
+%Calculation of cross section is not fast and it is very unpractical to calculate cross section for each generated event,
+%instead the cross section is calculated in a discrete values of $Q^{2}$, $Q^{\prime 2}$, $t$, $\Phi_{L}$, $\Phi_{CM}$ and $\Theta_{CM}$, then
+%cross section is extrapolated using the two (in each variable) closest values of already defined cross section.
+
+\vskip 1cm
+\noindent
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\\
+Some details about the Generaror (Mari)\\
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MC generator description %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip 1cm
+\begin{figure}[!htb]
+ \centering
+  \begin{subfigure}{0.48 \tw}
+  \grinp[width=0.99\tw]{img/th_P_mum_rec4.pdf}
+  \caption{}
+  \label{fig:th_P_mum_rec4}
+ \end{subfigure}
+ \begin{subfigure}{0.48 \tw}
+  \grinp[width=0.99\tw]{img/th_P_mup_rec4.pdf}
+  \caption{}
+  \label{fig:th_P_mup_rec4}
+ \end{subfigure}
+ \\
+ \begin{subfigure}{0.48 \tw}
+  \grinp[width=0.99\tw]{img/th_P_em_rec2.pdf}
+  \caption{}
+  \label{fig:th_P_em_rec2}
+ \end{subfigure}
+ \begin{subfigure}{0.48 \tw}
+  \grinp[width=0.99\tw]{img/MM_smear1.pdf}
+  \caption{}
+  \label{fig:MM_smear1}
+ \end{subfigure}
+ \caption{ $\theta$ vs $P$ distributions for detected $\mu^{-}$ (a), $\mu^{+}$ (b) and $e-$ (c).
+(d) is the missing mass of detected $e^{-}\mu^{-}\mu^{+}$ system.}
+\label{fig:particle_kinematic_distr}
+\end{figure}
+Kinematic distribtion of detected final state particles are shown in Fig.\ref{fig:particle_kinematic_distr}, where
+a, b, and c represent "$\theta$ vs $P$" distributions for $\mu^{-}$, $\mu^{+}$ and $e^{-}$ respectively, and d is the
+missing mass of detected $e^{-}\mu^{-}\mu^{+}$ system.
+As one can see because of diffferent kinematics of $J/\Psi$ (narrow $M(\mu^{-}\mu^{+})$ mass region) and DDCS (wide $M(\mu^{-}\mu^{+})$,
+kinematic distributions "$\theta$ vs $P$" are not quite similar,
+however missing mass resolution is still as good as in $J/\Psi$
+case (see Figs. \ref{fig:jp_mukine} and \ref{fig:jp_mres}), and will allow ensure exclusivity of the reaction.
+
+For the abovementioned kinematic bin, the acceptance and expected rates in different bins of $Q^{\prime 2}$ are shown in \ref{fig:Acc_and_rates_Qp2}
+\begin{figure}[!htb]
+ \centering
+   \begin{subfigure}{0.48 \tw}
+  \grinp[width=0.99\tw]{img/Acc_Qp2.pdf}
+  \caption{}
+  \label{fig:Acc_Qp2}
+ \end{subfigure}
+ \begin{subfigure}{0.48 \tw}
+  \grinp[width=0.99\tw]{img/h_Qp2_rates1.pdf}
+  \caption{}
+  \label{fig:h_Qp2_rates1}
+ \end{subfigure}
+\caption{Acceptance and expected rates for different bins of $Q^{\prime 2}$ (left)}
+\label{fig:Acc_and_rates_Qp2}
+\end{figure}
+
+Later each $Q^{\prime 2}$ bin is divided into 12 bins on $\Phi_{L}$, and for each bin counts and statistic error-bars on asymmetry as a function of $\Phi$
+ are shown in \ref{fig:counts_and_errorbars0}, \ref{fig:counts_and_errorbar1} and \ref{fig:counts_and_errorbars2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[!htb]
+ \centering
+   \begin{subfigure}{0.48 \tw}
+  \grinp[width=0.99\tw]{img/PHI_DVCS_rates_0.pdf}
+  \caption{}
+  \label{fig:PHI_DVCS_rates_0}
+ \end{subfigure}
+ \begin{subfigure}{0.48 \tw}
+  \grinp[width=0.99\tw]{img/Asym_errorbars_0.pdf}
+  \caption{}
+  \label{fig:Asym_errorbars_0}
+ \end{subfigure}\\
+\caption{Count rates (left) and statistic error-bars for (right) for the $Q^{\prime2}(1.8-2.4); GeV^{2}$ bin}
+\label{fig:counts_and_errorbars0}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[!htb]
+ \centering
+   \begin{subfigure}{0.48 \tw}
+  \grinp[width=0.99\tw]{img/PHI_DVCS_rates_1.pdf}
+  \caption{}
+  \label{fig:PHI_DVCS_rates_1}
+ \end{subfigure}
+ \begin{subfigure}{0.48 \tw}
+  \grinp[width=0.99\tw]{img/Asym_errorbars_1.pdf}
+  \caption{}
+  \label{fig:Asym_errorbars_1}
+ \end{subfigure}\\
+\caption{Count rates (left) and statistic error-bars (right) for the $Q^{\prime2}(2.4 - 3.2); GeV^{2}$ bin}
+\label{fig:counts_and_errorbar1}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[!htb]
+ \centering
+   \begin{subfigure}{0.48 \tw}
+  \grinp[width=0.99\tw]{img/PHI_DVCS_rates_2.pdf}
+  \caption{}
+  \label{fig:PHI_DVCS_rates_2}
+ \end{subfigure}
+ \begin{subfigure}{0.48 \tw}
+  \grinp[width=0.99\tw]{img/Asym_errorbars_2.pdf}
+  \caption{}
+  \label{fig:Asym_errorbars_2}
+ \end{subfigure}\\
+\caption{Count rates (left) and statistic error-bars (right) for the $Q^{\prime2}(3.2 - 4); GeV^{2}$ bin}
+\label{fig:counts_and_errorbars2}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{figure}[!htb]
+%  \centering
+%    \begin{subfigure}{0.48 \tw}
+%   \grinp[width=0.99\tw]{img/PHI_DVCS_rates_3.pdf}
+%   \caption{}
+%   \label{fig:PHI_DVCS_rates_3}
+%  \end{subfigure}
+%  \begin{subfigure}{0.48 \tw}
+%   \grinp[width=0.99\tw]{img/Asym_errorbars_3.pdf}
+%   \caption{}
+%   \label{fig:Asym_errorbars_3}
+%  \end{subfigure}\\
+% \caption{Count rates (left) and statistic error-bars (right) for the $Q^{\prime2}(4. - 4.8); GeV^{2}$ bin}
+% \label{fig:counts_and_errorbars3}
+% \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

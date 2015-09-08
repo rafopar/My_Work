@@ -1,0 +1,117 @@
+%\documentclass[letterpaper,12pt]{article}
+\documentclass[superscriptaddress,preprintnumbers,amsmath,amssymb,aps,11pt]{revtex4}
+%\usepackage[]{authblk}
+%\usepackage{graphics}
+\usepackage[dvipdf]{graphicx}
+%\usepackage{subfig}  % For subfloats
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{epsfig}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\def \rarr {\rightarrow}
+\def \grinp {\includegraphics}
+\def \tw {\textwidth}
+\def\dfrac#1#2{\displaystyle{{#1}\over{#2}}}
+\def \dstl {\displaystyle}
+\definecolor{GREEN}{rgb}{0.,0.8,0}
+\definecolor{RED}{rgb}{1,0,0}
+\definecolor{ORANGE}{rgb}{1,0.5,0}
+\newcommand{\JLAB}{Thomas Jefferson National Accelerator Facility, Newport News, Virginia 23606}
+\newcommand{\ORSAY}{Institut de Physique Nucleaire d'Orsay, IN2P3, BP 1, 91406 Orsay, France}
+\newcommand{\UNH}{University of New Hampshire}
+\newcommand{\GLASGO}{Glasgow University, Glasgo, Scotland} 
+\begin{document}
+%\rightline{LOI-PAC43}
+
+\title{Di-muon electroproduction with 11GeV electron beam and the modified CLAS12 detector}
+
+\author{M. Boer} \author{M. Guidal} \author{E. Voutier} 
+\affiliation{\ORSAY}
+\author{N. Baltzell} 
+\author{V. Burkert} 
+\author{L. Elouadrhiri} 
+\author{F-X. Girod}
+\author{P. Nadel-Turonski ...}
+\author{S. Stepanyan}
+\author{M. Ungaro} 
+\affiliation{\JLAB}
+\author{R. Paremuzyan}  
+\affiliation{\UNH}
+\author{D. Sokhan} 
+\affiliation{\GLASGO}
+
+%\maketitle
+%\date{\today}
+
+
+\begin{abstract}
+With this letter we propose to study Generalized Parton Distributions of the proton using the Double Deeply Virtual Compton Scattering (DDVCS) process. The DDVCS allows mapping of GPDs in wider $x - \xi$ plane then Deeply Virtual Compton Scattering (DVCS) or Deeply Virtual Meson Production (DVMP). The reaction $e ~p\to e^\prime ~p^\prime \gamma^\star\to e^\prime ~p^\prime \mu^+\mu^-$ will be studied using the CLAS12 detector in Hall-B and the 11 GeV longitudinally polarized electron beam impinging on liquid hydrogen target. In the same final states and kinematics reach the J/$\Psi$ electroproduction can be studied, allowing investigation the gluonic structure of the nucleon in the reaction $e ~p\to e^\prime ~p^\prime J/\Psi\to e^\prime ~p^\prime \mu^+\mu^-$. 
+
+%The CLAS12 Central Detector will not be used in this experiment. 
+
+\end{abstract}
+%\maketitle
+\maketitle
+
+\clearpage
+
+\tableofcontents
+\clearpage
+
+\section{Introduction}
+\indent
+
+The program for studying Generalized Parton Distributions (GPDs) using the JLAB 12 GeV machine consists of measuring spin (beam/target) observables and cross sections in Deeply Virtual Compton Scattering (DVCS) \cite{dvcs_props} and Deeply Virtual Meson Production (DVMP) \cite{dvmp_props}, and the angular asymmetries in the Timelike Compton Scattering (TCS). In these reactions, observables contain integrals of GPDs over the quark momentum fraction $x$ (the real part of Compton amplitude) or GPDs at specific kinematical point ($x=\xi$) (the imaginary part of Compton amplitude). In contrast, the Double Deeply Virtual Compton Scattering (DDVCS), where both the incoming and outgoing photons have high virtuality, allows to map out GPDs in wide range of $x\ne \xi$. 
+
+There are two challenges in measuring DDVCS process. First, its cross section is two to three orders of magnitude smaller than the cross section of the DVCS process, and second, decay leptons of the outgoing virtual photon should be distinguishable from the incoming-scattered lepton.
+The proposed experiment will study electroproduction of muon pairs ($\mu^+\mu^-$) using 11 GeV longitudinally polarized electron beam, hydrogen target, and the modified CLAS12 detector in Hall-B. This reaction provides a solution to both challenges. Clearly incoming-scattered and decay leptons are distinguishable. As for accommodating a small cross section, we propose to run the experiment at a luminosity of $\sim 10^{37}$ cm$^2$ sec$^{-1}$, i.e. much higher than the design luminosity of the CLAS12 detector, $\sim 10^{35}$ cm$^2$ sec$^{-1}$ \cite{clas12}. In order to run at such hihg luminosities, the CLAS12 Forward Detector (FD) will be completely shielded. This shield in turn will work as an absorber/filter for the muon detector, i.e. CLAS12 FD. The scattered electrons will be detected in a compact, high resolution calorimeter ($PbWO_4$ crystal calorimeter), which will be part of the shield (muon observer). 
+Finally, the proposed measurement will also allow for a study of $J/\Psi$ electroproduction and possible access to information on the gluonic structure of the nucleon.    
+
+\section{Physics Motivation}
+
+\subsection{Double Deep Virtual Compton Scattering}
+M. Guidal, E. Voutier
+\input{ddvcs_clas12}
+\clearpage
+
+\subsection{J/$\Psi$ Electroproduction}
+N. Baltzel, F-X. Girod, S. Stepanyan
+
+\input{jpsi_motive}
+
+\section{The Experiment}
+\input{det_config}
+
+\subsection{Background Studies and Luminosity Limits}
+L. Elouadrhiri, M. Ungaro
+
+
+\section{Cross Sections, Acceptances, and Expected Rates}
+\indent
+
+For DDVCS and Bethe-Heitler cross section calculation the VGG code has been used \cite{vgg_code}. The same code was used in the event generator to simulate events for acceptance and resolution studies. The VGG code was modified to calculate Bethe-Heitler and DDVCS cross sections with di-muon final state. For J/$\psi$ electroproduction cross section estimate photoproduction cross section for 2-gluon exchange is used in conjunction with Vector Dominance Model (VDM). The detector acceptance was studied using a simple kinematic simulator \cite{fsgen} (see below for details). 
+
+The acceptances and resolutions have been simulated using the modified version of the CLAS12 fast MC code \cite{fastmc}. A change was made to the CLAS12 FD simulation for angular resolution (for muons) due to the multiple scattering in the shielding/absorber. An additional $\sigma_C=0.01$ rad  multiple scattering term was added quadratically to the angular resolution calculation. The momentum of the tracks in FD will be measured with the forward drift chambers, then additional corrections will be applied to account for the energy loss in the absorber to calculate momentum at the production vertex (the energy loss in the absorber is not included in fast MC code).  
+
+For electron detection a new detector was introduced in fast MC. The geometrical acceptance of the detector was confined within $\theta=5^\circ$ to $35^\circ$ and $\phi=0^\circ$ to $60^\circ$, where $\theta$ and $\phi$ are the polar and azimuthal angles of the particle, respectively. The energy resolution of $\sigma_E/E=3\%/\sqrt(E)$ and the angular resolution of $\sigma_{\theta(\phi)}=2$ mrad were taken from analysis of the performance of a similar calorimeter used for the Hall-B HPS experiment \cite{HPS}.
+
+
+\subsection{DDVCS Cross Section and Expected Rates}
+M. Guidal, M. Boer, R. Paremuzyan
+\input{DDVCS_rates}
+
+\subsection{J/$\Psi$ Electroproduction}
+N. Baltzel, F-X. Girod, S. Stepanyan
+\input{jpsi_xs_rates}
+
+\section{Beam Time Estimate}
+
+\section{Summary}
+
+\input{bibl}
+
+\end{document}
