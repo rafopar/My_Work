@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.8.2)  8 SEP 2015 16:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.8.2)  11 SEP 2015 16:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -242,224 +242,172 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 41.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 60.
+(Font)              <12> on input line 52.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 60.
+(Font)              <8> on input line 52.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 60.
+(Font)              <6> on input line 52.
  <img/Struck_Readout.pdf, id=1, 1156.32pt x 216.81pt>
 File: img/Struck_Readout.pdf Graphic file (type pdf)
 
 <use img/Struck_Readout.pdf>
-Package pdftex.def Info: img/Struck_Readout.pdf used on input line 67.
+Package pdftex.def Info: img/Struck_Readout.pdf used on input line 74.
 (pdftex.def)             Requested size: 513.57059pt x 96.29323pt.
 
 <img/Struck_Connections.pdf, id=2, 1156.32pt x 794.97pt>
 File: img/Struck_Connections.pdf Graphic file (type pdf)
 
 <use img/Struck_Connections.pdf>
-Package pdftex.def Info: img/Struck_Connections.pdf used on input line 94.
+Package pdftex.def Info: img/Struck_Connections.pdf used on input line 99.
 (pdftex.def)             Requested size: 486.53882pt x 334.49164pt.
 
 <img/25MHz_Clock.png, id=3, 669.50125pt x 550.055pt>
 File: img/25MHz_Clock.png Graphic file (type png)
  <use img/25MHz_Clock.png>
-Package pdftex.def Info: img/25MHz_Clock.png used on input line 104.
+Package pdftex.def Info: img/25MHz_Clock.png used on input line 113.
 (pdftex.def)             Requested size: 405.45177pt x 333.12422pt.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/Struck_Readout.pdf>]
- <Upstream_Rate_Pos_Correlation.pdf, id=24, 795.97375pt x 419.5675pt>
-File: Upstream_Rate_Pos_Correlation.pdf Graphic file (type pdf)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./img/Struck_Readout.p
+df> <./img/Struck_Connections.pdf
 
-<use Upstream_Rate_Pos_Correlation.pdf>
-Package pdftex.def Info: Upstream_Rate_Pos_Correlation.pdf used on input line 1
-29.
+pdfTeX warning: /usr/bin/pdflatex (file ./img/Struck_Connections.pdf): PDF incl
+usion: multiple pdfs with page group included in a single page
+>] <img/Upstream_Rate_Pos_Correlation.pdf, id=41, 795.97375pt x 419.5675pt>
+File: img/Upstream_Rate_Pos_Correlation.pdf Graphic file (type pdf)
+
+<use img/Upstream_Rate_Pos_Correlation.pdf>
+Package pdftex.def Info: img/Upstream_Rate_Pos_Correlation.pdf used on input li
+ne 134.
 (pdftex.def)             Requested size: 513.57059pt x 270.71819pt.
 
-<img/Upstream_rates1.png, id=25, 1121.18875pt x 466.74374pt>
+<img/Upstream_rates1.png, id=42, 1121.18875pt x 466.74374pt>
 File: img/Upstream_rates1.png Graphic file (type png)
 
 <use img/Upstream_rates1.png>
-Package pdftex.def Info: img/Upstream_rates1.png used on input line 145.
+Package pdftex.def Info: img/Upstream_rates1.png used on input line 149.
 (pdftex.def)             Requested size: 513.57059pt x 213.80736pt.
- [2 <./img/Struck_Connections.pdf>] [3 <./img/25MHz_Clock.png>]
-<img/FCup_harp_halo_correlation1.png, id=48, 1321.93875pt x 587.19376pt>
-File: img/FCup_harp_halo_correlation1.png Graphic file (type png)
-
-<use img/FCup_harp_halo_correlation1.png>
-Package pdftex.def Info: img/FCup_harp_halo_correlation1.png used on input line
- 172.
-(pdftex.def)             Requested size: 513.57059pt x 228.12657pt.
-
-<img/FCup_Halo_corr_With_Fix_Harpwire.pdf, id=49, 940.51375pt x 445.665pt>
-File: img/FCup_Halo_corr_With_Fix_Harpwire.pdf Graphic file (type pdf)
-
-<use img/FCup_Halo_corr_With_Fix_Harpwire.pdf>
-Package pdftex.def Info: img/FCup_Halo_corr_With_Fix_Harpwire.pdf used on input
- line 195.
-(pdftex.def)             Requested size: 513.57059pt x 243.35522pt.
-
-<img/FCup_Blocker_diagram.pdf, id=50, 1012.78375pt x 368.37625pt>
-File: img/FCup_Blocker_diagram.pdf Graphic file (type pdf)
-
-<use img/FCup_Blocker_diagram.pdf>
-Package pdftex.def Info: img/FCup_Blocker_diagram.pdf used on input line 222.
-(pdftex.def)             Requested size: 513.57059pt x 186.8014pt.
-
-<img/BPM_Halo_2H02_1.pdf, id=51, 1012.78375pt x 368.37625pt>
+ [3 <./img/25MHz_Clock.png>]
+<img/BPM_Halo_2H02_1.pdf, id=47, 1012.78375pt x 368.37625pt>
 File: img/BPM_Halo_2H02_1.pdf Graphic file (type pdf)
 
 <use img/BPM_Halo_2H02_1.pdf>
-Package pdftex.def Info: img/BPM_Halo_2H02_1.pdf used on input line 236.
+Package pdftex.def Info: img/BPM_Halo_2H02_1.pdf used on input line 177.
 (pdftex.def)             Requested size: 513.57059pt x 186.8014pt.
 
-<img/BPM_Jump.pdf, id=52, 1012.78375pt x 368.37625pt>
-File: img/BPM_Jump.pdf Graphic file (type pdf)
- <use img/BPM_Jump.pdf>
-Package pdftex.def Info: img/BPM_Jump.pdf used on input line 262.
-(pdftex.def)             Requested size: 513.57059pt x 186.8014pt.
-
-<img/BPM_Jump2.pdf, id=53, 1012.78375pt x 368.37625pt>
-File: img/BPM_Jump2.pdf Graphic file (type pdf)
- <use img/BPM_Jump2.pdf>
-Package pdftex.def Info: img/BPM_Jump2.pdf used on input line 263.
-(pdftex.def)             Requested size: 513.57059pt x 186.8014pt.
-
-<img/Struck_Oscilations_Zoom.png, id=54, 1284.8pt x 469.755pt>
+<img/Struck_Oscilations_Zoom.png, id=48, 1284.8pt x 469.755pt>
 File: img/Struck_Oscilations_Zoom.png Graphic file (type png)
 
 <use img/Struck_Oscilations_Zoom.png>
-Package pdftex.def Info: img/Struck_Oscilations_Zoom.png used on input line 281
+Package pdftex.def Info: img/Struck_Oscilations_Zoom.png used on input line 198
 .
 (pdftex.def)             Requested size: 513.57059pt x 187.77681pt.
 
-<img/Struck_trip2.png, id=55, 1169.36874pt x 603.25375pt>
+<img/Struck_trip2.png, id=49, 1169.36874pt x 603.25375pt>
 File: img/Struck_trip2.png Graphic file (type png)
 
 <use img/Struck_trip2.png>
-Package pdftex.def Info: img/Struck_trip2.png used on input line 296.
+Package pdftex.def Info: img/Struck_trip2.png used on input line 214.
 (pdftex.def)             Requested size: 513.57059pt x 264.94461pt.
- [4 <./Upstream_Rate_Pos_Correlation.pdf>] [5 <./img/Upstream_rates1.png> <./im
-g/FCup_harp_halo_correlation1.png>] [6 <./img/FCup_Halo_corr_With_Fix_Harpwire.
-pdf> <./img/FCup_Blocker_diagram.pdf
+ [4 <./img/Upstream_Rate_Pos_Correlation.pdf>]
+<img/BPM_Jump.pdf, id=69, 1012.78375pt x 368.37625pt>
+File: img/BPM_Jump.pdf Graphic file (type pdf)
+ <use img/BPM_Jump.pdf>
+Package pdftex.def Info: img/BPM_Jump.pdf used on input line 234.
+(pdftex.def)             Requested size: 513.57059pt x 186.8014pt.
 
-pdfTeX warning: /usr/bin/pdflatex (file ./img/FCup_Blocker_diagram.pdf): PDF in
-clusion: multiple pdfs with page group included in a single page
->] <img/Colim_SCan.pdf, id=116, 1157.32375pt x 657.45625pt>
-File: img/Colim_SCan.pdf Graphic file (type pdf)
+<img/BPM_Jump2.pdf, id=70, 1012.78375pt x 368.37625pt>
+File: img/BPM_Jump2.pdf Graphic file (type pdf)
+ <use img/BPM_Jump2.pdf>
+Package pdftex.def Info: img/BPM_Jump2.pdf used on input line 235.
+(pdftex.def)             Requested size: 513.57059pt x 186.8014pt.
 
-<use img/Colim_SCan.pdf>
-Package pdftex.def Info: img/Colim_SCan.pdf used on input line 316.
-(pdftex.def)             Requested size: 513.57059pt x 291.74951pt.
- [7 <./img/BPM_Halo_2H02_1.pdf>]
-<img/Colim_trip_HPS_SC.png, id=139, 1209.51875pt x 540.0175pt>
-File: img/Colim_trip_HPS_SC.png Graphic file (type png)
-
-<use img/Colim_trip_HPS_SC.png>
-Package pdftex.def Info: img/Colim_trip_HPS_SC.png used on input line 343.
-(pdftex.def)             Requested size: 513.57059pt x 229.29428pt.
-
-<img/Colim_trip_upstream.png, id=140, 979.66pt x 534.99875pt>
-File: img/Colim_trip_upstream.png Graphic file (type png)
-
-<use img/Colim_trip_upstream.png>
-Package pdftex.def Info: img/Colim_trip_upstream.png used on input line 344.
-(pdftex.def)             Requested size: 513.57059pt x 280.47037pt.
- [8 <./img/BPM_Jump.pdf> <./img/BPM_Jump2.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./img/BPM_Jump2.pdf): PDF inclusion: mu
-ltiple pdfs with page group included in a single page
->] <img/Colim_Beam_move.png, id=186, 1277.77374pt x 464.73625pt>
-File: img/Colim_Beam_move.png Graphic file (type png)
-
-<use img/Colim_Beam_move.png>
-Package pdftex.def Info: img/Colim_Beam_move.png used on input line 360.
-(pdftex.def)             Requested size: 513.57059pt x 186.7918pt.
-
-<img/quiet_Target.png, id=187, 559.08875pt x 464.73625pt>
+[5 <./img/Upstream_rates1.png> <./img/BPM_Halo_2H02_1.pdf>]
+<img/quiet_Target.png, id=92, 559.08875pt x 464.73625pt>
 File: img/quiet_Target.png Graphic file (type png)
 
 <use img/quiet_Target.png>
-Package pdftex.def Info: img/quiet_Target.png used on input line 374.
+Package pdftex.def Info: img/quiet_Target.png used on input line 259.
 (pdftex.def)             Requested size: 243.26941pt x 202.21536pt.
 
-<img/Semiquiet_with_target.png, id=188, 542.025pt x 468.75125pt>
+<img/Semiquiet_with_target.png, id=93, 542.025pt x 468.75125pt>
 File: img/Semiquiet_with_target.png Graphic file (type png)
 
 <use img/Semiquiet_with_target.png>
-Package pdftex.def Info: img/Semiquiet_with_target.png used on input line 375.
+Package pdftex.def Info: img/Semiquiet_with_target.png used on input line 260.
 (pdftex.def)             Requested size: 243.26941pt x 210.38536pt.
 
-<img/Non_Queit_Target_quick.png, id=189, 557.08125pt x 464.73625pt>
+<img/Non_Queit_Target_quick.png, id=94, 557.08125pt x 464.73625pt>
 File: img/Non_Queit_Target_quick.png Graphic file (type png)
 
 <use img/Non_Queit_Target_quick.png>
-Package pdftex.def Info: img/Non_Queit_Target_quick.png used on input line 376.
+Package pdftex.def Info: img/Non_Queit_Target_quick.png used on input line 261.
 
 (pdftex.def)             Requested size: 243.26941pt x 202.93867pt.
 
-<img/Non_queit_Target.png, id=190, 587.19376pt x 466.74374pt>
+<img/Non_queit_Target.png, id=95, 587.19376pt x 466.74374pt>
 File: img/Non_queit_Target.png Graphic file (type png)
 
 <use img/Non_queit_Target.png>
-Package pdftex.def Info: img/Non_queit_Target.png used on input line 377.
+Package pdftex.def Info: img/Non_queit_Target.png used on input line 262.
 (pdftex.def)             Requested size: 243.26941pt x 193.36743pt.
- [9 <./img/Struck_Oscilations_Zoom.png> <./img/Struck_trip2.png>] <img/FSD_Mask
-ed_Scan.png, id=194, 1183.42125pt x 556.0775pt>
+ [6 <./img/Struck_Oscilations_Zoom.png> <./img/Struck_trip2.png>] [7 <./img/BPM
+_Jump.pdf> <./img/BPM_Jump2.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./img/BPM_Jump2.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+>] [8 <./img/quiet_Target.png> <./img/Semiquiet_with_target.png> <./img/Non_Que
+it_Target_quick.png> <./img/Non_queit_Target.png>]
+<img/FSD_Masked_Scan.png, id=147, 1183.42125pt x 556.0775pt>
 File: img/FSD_Masked_Scan.png Graphic file (type png)
 
 <use img/FSD_Masked_Scan.png>
-Package pdftex.def Info: img/FSD_Masked_Scan.png used on input line 414.
+Package pdftex.def Info: img/FSD_Masked_Scan.png used on input line 302.
 (pdftex.def)             Requested size: 513.57059pt x 241.32326pt.
 
-<img/FSD_10ms_30nA.pdf, id=195, 940.51375pt x 368.37625pt>
+<img/FSD_10ms_30nA.pdf, id=148, 940.51375pt x 368.37625pt>
 File: img/FSD_10ms_30nA.pdf Graphic file (type pdf)
 
 <use img/FSD_10ms_30nA.pdf>
-Package pdftex.def Info: img/FSD_10ms_30nA.pdf used on input line 430.
+Package pdftex.def Info: img/FSD_10ms_30nA.pdf used on input line 314.
 (pdftex.def)             Requested size: 513.57059pt x 201.15172pt.
 
-<img/FSD_Test.png, id=196, 1153.30875pt x 644.4075pt>
+<img/FSD_Test.png, id=149, 1153.30875pt x 644.4075pt>
 File: img/FSD_Test.png Graphic file (type png)
  <use img/FSD_Test.png>
-Package pdftex.def Info: img/FSD_Test.png used on input line 431.
+Package pdftex.def Info: img/FSD_Test.png used on input line 315.
 (pdftex.def)             Requested size: 513.57059pt x 286.962pt.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 334.
 
-[10 <./img/Colim_SCan.pdf>] [11 <./img/Colim_trip_HPS_SC.png> <./img/Colim_trip
-_upstream.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 448.
 
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 448.
-
-[12 <./img/Colim_Beam_move.png>] [13 <./img/quiet_Target.png> <./img/Semiquiet_
-with_target.png> <./img/Non_Queit_Target_quick.png> <./img/Non_queit_Target.png
->] [14 <./img/FSD_Masked_Scan.png>] [15 <./img/FSD_10ms_30nA.pdf> <./img/FSD_Te
-st.png>] (./Beam_Studies.aux) ) 
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 334.
+ [9 <./img/FSD_Masked_Scan.png>] [10 <./img/FSD_10ms_30nA.pdf> <./img/FSD_Test.
+png>] [11]
+(./Beam_Studies.aux) ) 
 Here is how much of TeX's memory you used:
- 3707 strings out of 494450
- 57727 string characters out of 6165793
- 133050 words of memory out of 5000000
- 6895 multiletter control sequences out of 15000+600000
+ 3663 strings out of 494450
+ 56444 string characters out of 6165793
+ 123953 words of memory out of 5000000
+ 6858 multiletter control sequences out of 15000+600000
  8501 words of font info for 30 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
- 38i,11n,47p,472b,369s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Beam_Studies.pdf (15 pages, 944343 bytes).
+ 38i,11n,47p,561b,369s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Beam_Studies.pdf (11 pages, 786693 bytes).
 PDF statistics:
- 270 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
+ 196 PDF objects out of 1000 (max. 8388607)
+ 113 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

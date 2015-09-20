@@ -28,14 +28,14 @@
 \definecolor{RED}{rgb}{1,0,0}
 \definecolor{ORANGE}{rgb}{1,0.5,0}
 
-\title{Beam motion studies using Struck scalers}
+\title{Beam motion studies}
 
-% \author[1]{H. Egiyan}
-% \author[2]{R. Paremuzyan}
-% \author[1] {S. Stepanyan}
-% 
-% \affil[1]{Thomas Jefferson National Accelerator Facility, Newport News, VA 23606}
-% \affil[2] {University of New Hampshire,  Durham, NH 03824}
+\author[1]{H. Egiyan}
+\author[2]{R. Paremuzyan}
+\author[1] {S. Stepanyan}
+
+\affil[1]{Thomas Jefferson National Accelerator Facility, Newport News, VA 23606}
+\affil[2] {University of New Hampshire,  Durham, NH 03824}
 
 \begin{document}
 \maketitle
@@ -48,7 +48,7 @@
   
   If beam movement is happening in a long time interval (orders of seconds), and it is sufficiently large (orders of mm) that can
  hit beam-pipe, then it will cause a high rate on Halo counters.
- These long term movements can be studied through MYA Archiving tool, by correlating BPM positions with rates on Halo
+ These long term movements can be studied through MYA archiving tool, by correlating BPM positions with rates on Halo
  counters.
 
  Beam motion can happen in a short time intervals (orders of microseconds) also.  In this case
@@ -114,16 +114,15 @@ to scaler.}
  We noticed also the time-stamps are not correct, since the actual dead time is about $1.1\;s$, but
  in the figure one can see it is about $\approx 150\; ms$.
 \section{Testing the system in the upstream} 
- 1-st check of the system in the presence of beam was on March-14 and March-15. At that time CEBAF machine was
- in a state that downstream BPMs were not yet calibrated, and the beam direction was to the tagger dump.
- At that moment only Upstream counters were counting high and consequently, the channel 2, which is the only channel that
- connected to upstream counters, had noticeable data in it. Also orbit locks were not engaged yet, and that caused
- strong beam excursions.
+ The first check of the system with beam was on March-14 and March-15. At that time CEBAF machine was
+ in a state that downstream BPMs were not yet calibrated, and the beam was directed to the tagger dump.
+ In that case only upstream counters were counting high and consequently, the channel $\#2$, which is the channel that
+ was connected to the upstream counters, and had noticeable rate in it. 
   Since the dwell time is quite small ($15\;\mu s$), one need to have a sufficient rates on counters to
- be able to observe rate evolution upon the time. 
-  For this reason the vertical thick wire ($1\;mm$ in diameter) of harp\_tagger (wire is parallel to $X$ Axis) was moved to the 
-  beam close enough to create about $3 \;MHz$ rates on together "Upstream-L" + "Tagger-Top".
-   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ be able to observe rate change over the time. 
+  For this reason the vertical thick wire ($1\;mm$ in diameter) of the tagger harp (wire is parallel to $X$ Axis) was moved close
+  to the beam to create about $3 \;MHz$ rates on "Upstream-L" + "Tagger-Top" together.
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  \begin{figure}[!htb]
 \centering
  \grinp[width=0.95\tw]{Upstream_Rate_Pos_Correlation.pdf}
@@ -136,100 +135,35 @@ to scaler.}
  In Fig.\ref{fig:upstr_rate_Variation.} a small range of a stripchart from MYA archiver is shown, where
   2C24 $Y$ position is indicated by green, Red represents rates on Upstream-R counter, and the brown is the beam current
   at 2C24A.
- As one can see beam current in that region is quite stable, instead beam position is oscillating with a period of about
- $30\;s$, and it is in correlation with rates on Upstream Halo counters. When beam moves top, and consequently touches
+ As one can see beam current in that period is quite stable, instead beam position is oscillating with a period of about
+ $30\;s$, and it is in correlation with rates on Upstream Halo counters. When beam moves up, and consequently touches
  the wire, rates quickly rise up to few $MHz$.
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  \begin{figure}
   \centering
   \grinp[width=0.95\tw]{img/Upstream_rates1.png}
   \caption{An example of one buffer with 60K readings from scaller channel 2.}
   \label{fig:upstr_counts1}
  \end{figure}
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
- In Fig.\ref{fig:upstr_counts1} shown an example of one buffer with 60K readings from scaler channel 2.
- As one can notice from the figure, rates on scalers oscillate a lot. Rates vary from 0 up to 140. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+ In Fig.\ref{fig:upstr_counts1} an example of one buffer with 60K readings from scaler channel 2 is shown.
+ As one can notice from the figure, rates on scalers oscillate a lot. Rates vary from 0 up to 140,
  140 counts correspond to about $9\;MHz$. Taking into account that $9\;MHz$ is the sum of two counters
 "Upstream-R" and "Tagger-top". These two counters count roughly equal. So the maximum rate would correspond
 to about $4.5\;MHz$ to each counter. 
-The rate of oscillations isn't appear to be constant, but it mostly within $60\;Hz$ to $100\;Hz$.
+The rate of oscillations isn't appear to be constant, but it is mostly within $60\;Hz$ to $100\;Hz$.
 So taking into account above mentioned one can conclude that, without orbit locks at 2C24, there
 exist two beam motion components. One is fast (within $60\;Hz$ to $100\;Hz$), another
-is slow (with a 30 sec period). According to BPMs beam motion at 2C24 side is about $500\; \mu m$,
-however this doesn't mean that the beam motion will be the same order in the 2H02 side (close to HPS detector),
+is slow (with a 30 sec period). According to BPMs beam motion at 2C24 is about $500\; \mu m$,
+however this doesn't mean that the beam motion will be the same order in the 2H02 (close to the HPS detector),
 since settings of quadrapole magnets are such, that in Hall B beam has the largest spatial size at 2C24,
-whereas it is around $40\; \mu m$ in the 2H02A side.
-\section{Beam motion studies at HPS side}
-Downstream BPMs were calibrated and orbit locks were engaged on Apr 19 only,
-after the restoration of the machine from the power outage, that caused failure of CHL2.
-Next set of beam movement studies with Struck scalers began on Apr 27 owl.
-In a similar way as in upstream part, at HPS side also to determine
-the beam position, the 2H02A harp
-vertical thick wire ($1\;mm$ in diameter) was passed through the beam.
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[!htb]
- \centering
- \grinp[width=0.95\tw]{img/FCup_harp_halo_correlation1.png}
- \caption{Scan of the beam vertical profile with a harp $1\;mm$ wire. By blue shown harp motor position,
-by green shown rates on HPS\_SC counter, by red shown rates on Downstream\_bottom counter
- and the dashed orange line represents FCup current.}
-\label{fig:2H02A_thick_wire_scan}
-\end{figure}
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-In Fig.\ref{fig:2H02A_thick_wire_scan} shown time dependence of the Faraday Cup current (dashed orange), 
-rates on HPS\_SC halo counter (green), rates on Downstream\_bottom counter (red) and the harp\_2H02A 
-motor position (blue), during the scan.
- One can notice an apparent correlation between these variables. When the harp wire is far from the beam
- FCup current is stable (around $30\; nA$), both halo counters count quite small. As soon wire gets closer
- to the beam FCup current start to decrease, both halo counters start to increase. Reaching $\approx 600\;KHz$ HPS\_SC
- saturates causing counts to decrease. We don't see saturation on Downstream\_bottom, because it is upstream w.r.t. the 
- harp\_2H02A, and consequently will have much lower rates (The peak value is $\approx 45\;Hz$).
- The fact that FCup current decrease we think is because the $1\; mm$ wire plays a role of a small "beam blocker", and after the 
- wire about $30\%$ of beam electrons have scattered at enough large angles, or have such low energy that chicane bends
- them from the nominal trajectory causing them to miss FCup. For not being too busy plot the beam current measured at 2C24
- is not plotted, but it is quite stable, confirming additionally that the FCup current change is not because of the actual
- current decrease, but is because of the harp wire and the beam interaction.
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- \begin{figure}[!htb]
-  \centering
-  \grinp[width=0.95\tw]{img/FCup_Halo_corr_With_Fix_Harpwire.pdf}
-  \caption{Time dependence of HPS\_SC (green), FCup scaler (dashed orange), and beam X (dashed blue) and Y (Pink) in a 3 min
-  time interval.}
-  \label{fig:FCup_Halo_pos_time_dep1}
- \end{figure}
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- After the scan, beam blocker was moved in front of the FCup, then by our request MCC delivered us $100\;nA$ beam, 
- and harp vertical $1\;mm$ wire was positioned right at the place (around $10.55\;cm$) where rates on HPS\_SC start to increase.
- Now when BPMs are calibrated and orbit locks are engaged, no periodic $30\;s$ rate oscillation was observed, 
- as was observed in upstream part without engaged orbit locks. Actually 
- during that shift few times the harp wire position was adjusted by $\approx 50\;\mu m$ to make sure that rates on HPS\_SC
- counter are about $2-3\; MHz$, however this doesn't have a periodic character. 
- In Fig.\ref{fig:FCup_Halo_pos_time_dep1} shown time dependence of HPS\_SC (green), 
- FCup scaler (dashed orange), beam X (dashed blue) and Y (Pink) in a 3 min time interval. Note here instead of plotting FCup
- measured current value, the FCup scaler value is plotted. This is because with beam blocker
- the FCup current is small (around $0.9\; nA$), and small current changes are below MYA dead band (it is $0.01$ for this channel).
- The FCup scaler value is almost linearly proportional to the FCup current, and therefore it can be used instead of FCup current.
- One can note that here also (when the beam blocker is under the beam), 
- there is a correlation between FCup current and rates on Halo counters, however the correlation
- now is opposite, i.e. increase of count rates correspond to the increase of FCup current.
- The explanation for that we think is the following: when fraction of the beam (or entire beam) is interacting
- with the harp wire, then after the wire the beam is not mono-energetic and parallel anymore, in addition to that
- the chicane makes that dispersion even bigger, causing some part of the beam electrons escape the blocker and enter into FCUP.
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- \begin{figure}[!htb]
-  \centering
-  \grinp[width=0.95\tw]{img/FCup_Blocker_diagram.pdf}
-  \caption{A qualitative description of how the FCup current increase with the presence of the beam blocker,
-  when the beam interacts with a harp wire. Left represents the case when beam is not interacting with any matarial
-  before the beam blocker. Righ figure: beam has interacted with a harp wire.}
-  \label{fig:FCup_blocker_diagram}
- \end{figure}
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-It is qualitatively illustrated in Fig.\ref{fig:FCup_blocker_diagram}.
-Left drawing represents intact beam case, where almost all the beam hit the blocker, and in the
-right drawing beam has interacted with the harp before, and some of electrons will now miss the beam blocker and enter
-FCUP.
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+whereas it is around $40\; \mu m$ in the 2H02A.
+\section{Beam motion studies at HPS}
+The next set of beam motion studies with Struck scalers were performed on Apr 27. Similar to the upstream the
+harp 2H02 vertical thick wire (diameter is also $1\;mm$) placed close to the beam to create sufficient rates
+to on Struck scalers.
+In Fig.\ref{fig:2H02_rates_pos_correl1} shown beam vertical position at 2H02 (red) and rates on HPS\_SC (green).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  \begin{figure}[!htb]
   \centering
   \grinp[width=0.95\tw]{img/BPM_Halo_2H02_1.pdf}
@@ -237,13 +171,10 @@ FCUP.
   \label{fig:2H02_rates_pos_correl1}
  \end{figure}
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-In Fig.\ref{fig:FCup_Halo_pos_time_dep1} it is hard to see a correlation between beam
-vertical position and the rates on HPS\_SC mainly because the scale of vertical position is relatively large, and
-noise of BPM readings is large w.r.t. average position change.
-In Fig.\ref{fig:2H02_rates_pos_correl1} shown beam vertical position at 2H02 (red) and rates on HPS\_SC (green) with 
-appropriate scale and larger time interval. Now the correlation is more visible, also one can see that the beam 
-movement in all that time interval is less than $50\;\mu m$.
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+This shows that the BPM noise level is around $50\;\mu m$. Looking carefully to the picture, one can notice 
+that on top of BPM position fluctuations (the noise), there is also a small (w.r.t. BPM noise) position variations
+that are correlated with rates on HPS\_SC.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \begin{figure}[!htb]
 %  \centering
 %  \grinp[width=0.95\tw]{img/BPM_pos_width_curr_Correl.pdf}
@@ -252,10 +183,37 @@ movement in all that time interval is less than $50\;\mu m$.
 %  \label{fig:Width_curr_dep}
 % \end{figure}
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- The BPM noise level is inversely proportional to the beam current. In the future runnings the nominal 
- production current should be $\approx 200\;nA$, consequently
- the spatial resolution of BPMs will be better, that will allow to estimate beam motions more preciesly.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \begin{figure}[!htb]
+  \centering
+  \grinp[width=0.95\tw]{img/Struck_Oscilations_Zoom.png}
+  \caption{Counts as a function of time for Struck scaler channel 1 (HPS\_SC) in $100\;ms$ time
+  interval. Each point represents counts in a $15\;\mu s$ time interval.}
+  \label{fig:Struck_Oscil_Zoom1}
+ \end{figure}
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ In Fig.\ref{fig:Struck_Oscil_Zoom1} shown counts as a function of time for Struck scaler
+ channel 1 (HPS\_SC) in $100\;ms$ time interval. We see there is a clear oscialations of rates.
+ Oscilations are not occuring by a constant period, but it is mainly between $50$ to $100\;Hz$.
+ From MYA we learnt that at 2H02 in less than 50 $\mu m$ beam movement, rates on HPS\_SC increase
+ $\approx 10$ times. In Fig.\ref{fig:Struck_Oscil_Zoom1} oscillations are also the same order
+ about $10-20$ times between min and max values, so beam fast motions also should be within $50\; \mu m$.
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \begin{figure}[!htb]
+  \centering
+  \grinp[width=0.95\tw]{img/Struck_trip2.png}
+  \caption{counts on HPS\_SC from Struck scaler as a function of time. No increase of rates is observed
+  during the trip.}
+  \label{fig:Trip_quiet1}
+ \end{figure}
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ Looking into Struck data we also paid a special attention on beam trips, to see whether there is
+ an increase of rates just before the trip. On owl shift of Jun 27 wei didn't obsere any increase of
+ rates just before the trip. One example is shown in Fig.\ref{fig:Trip_quiet1}, where one can see that
+ rates just go down to 0 within few $\mu s$. 
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[!htb]
 \centering
  \subfloat[]{\label{fig:BPM_Jump_ex1}\grinp[width=0.95\tw]{img/BPM_Jump.pdf}} \\
@@ -274,34 +232,6 @@ movement in all that time interval is less than $50\;\mu m$.
  in upstream the beam movement is more than several $mm$s. The fact that the beam has moved in upstream also
  is an indication that the movement is not caused by the malfunction of Hall-B orbit locks, but
  is coming from the accelerator, and Hall-B orbit locks make it quite smaller at HPS side.
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- \begin{figure}[!htb]
-  \centering
-  \grinp[width=0.95\tw]{img/Struck_Oscilations_Zoom.png}
-  \caption{Counts as a function of time for Struck scaler channel 1 (HPS\_SC) in $100\;ms$ time
-  interval. Each point represents counts in a $15\;\mu s$ time interval.}
-  \label{fig:Struck_Oscil_Zoom1}
- \end{figure}
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- In Fig.\ref{fig:Struck_Oscil_Zoom1} shown counts as a function of time for Struck scaler
- channel 1 (HPS\_SC) in $100\;ms$ time interval. We see there is a clear oscialations of rates.
- Oscilations are not occuring by a constant period, but it is mainly between $50$ to $100\;Hz$.
- From MYA we learnt that at 2H02 in less than 50 $\mu\;m$ beam movement, rates on HPS\_SC increase
- $\approx 10$ times. In Fig.\ref{fig:Struck_Oscil_Zoom1} oscialations are also the same order
- about $10-20$ times between min and max values, so beam fast motions also should be within $50\; \mu m$.
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- \begin{figure}[!htb]
-  \centering
-  \grinp[width=0.95\tw]{img/Struck_trip2.png}
-  \caption{counts on HPS\_SC from Struck scaler as a function of time. No increase of rates is observed
-  during the trip.}
-  \label{fig:Trip_quiet1}
- \end{figure}
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- Looking into Struck data we also paied a special attention on beam trips, to see whether there is
- an increase of rates just before the trip. On owl shift of Jun 27 wei didn't obsere any increase of
- rates just before the trip. One example is shown in Fig.\ref{fig:Trip_quiet1}, where one can see that
- rates just go down to 0 within few $\mu s$. 
  
  \subsection{Beam motions using the collimator}
  Beam motions were studied with HPS collimator also. The idea was to find the ceter,
@@ -436,26 +366,106 @@ rates would increase more than 10 times. In c) we see more than 10 times increas
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  In Fig.\ref{fig:Rates_FSD_Test} represented two trips with two integration times $10\; ms$ (top) and
  $5\;ms$ (bottom). Red line is the translated threshold that would be if integration time is
- equal to the dwell time of the Struck scaler ($300\;\mu s$).
+ equal to the dwell time of the Struck scaler ($300\;\mu s$). One can see that the time
+ between threshold crossing and beam shutdown is consistent with the integration time.
+ We repeated this test several times with both $5\;ms$ and $10\;ms$ integration times, and 
+ and observed consistent results. 
  
+  \section{Temporary}
+  Downstream BPMs were calibrated and orbit locks were engaged on Apr 19 only,
+after the restoration of the machine from the power outage, that caused failure of CHL2.
+Next set of beam movement studies with Struck scalers began on Apr 27 owl.
+In a similar way as in upstream part, at HPS side also to determine
+the beam position, the 2H02A harp vertical thick wire ($1\;mm$ in diameter) was passed through the beam.
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[!htb]
+ \centering
+ \grinp[width=0.95\tw]{img/FCup_harp_halo_correlation1.png}
+ \caption{Scan of the beam vertical profile with a harp $1\;mm$ wire. By blue shown harp motor position,
+ by green shown rates on HPS\_SC counter, by red shown rates on Downstream\_bottom counter
+ and the dashed orange line represents FCup current.}
+\label{fig:2H02A_thick_wire_scan}
+\end{figure}
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ In Fig.\ref{fig:2H02A_thick_wire_scan} shown time dependence of the Faraday Cup current (dashed orange), 
+ rates on HPS\_SC halo counter (green), rates on Downstream\_bottom counter (red) and the harp\_2H02A 
+ motor position (blue), during the scan.
+ One can notice an apparent correlation between these variables. When the harp wire is far from the beam
+ FCup current is stable (around $30\; nA$), both halo counters count quite small. As soon wire gets closer
+ to the beam FCup current start to decrease, both halo counters start to increase. Reaching $\approx 600\;KHz$ HPS\_SC
+ saturates causing counts to decrease. We don't see saturation on Downstream\_bottom, because it is upstream w.r.t. the 
+ harp\_2H02A, and consequently will have much lower rates (The peak value is $\approx 45\;Hz$).
+ The fact that FCup current decrease we think is because the $1\; mm$ wire plays a role of a small "beam blocker", and after the 
+ wire about $30\%$ of beam electrons have scattered at enough large angles, or have such low energy that chicane bends
+ them from the nominal trajectory causing them to miss FCup. For not being too busy plot the beam current measured at 2C24
+ is not plotted, but it is quite stable, confirming additionally that the FCup current change is not because of the actual
+ current decrease, but is because of the harp wire and the beam interaction.
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \begin{figure}[!htb]
+  \centering
+  \grinp[width=0.95\tw]{img/FCup_Halo_corr_With_Fix_Harpwire.pdf}
+  \caption{Time dependence of HPS\_SC (green), FCup scaler (dashed orange), and beam X (dashed blue) and Y (Pink) in a 3 min
+  time interval.}
+  \label{fig:FCup_Halo_pos_time_dep1}
+ \end{figure}
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ After the scan, beam blocker was moved in front of the FCup, then by our request MCC delivered us $100\;nA$ beam, 
+ and harp vertical $1\;mm$ wire was positioned right at the place (around $10.55\;cm$) where rates on HPS\_SC start to increase.
+ Now when BPMs are calibrated and orbit locks are engaged, no periodic $30\;s$ rate oscillation was observed, 
+ as was observed in upstream part without engaged orbit locks. Actually 
+ during that shift few times the harp wire position was adjusted by $\approx 50\;\mu m$ to make sure that rates on HPS\_SC
+ counter are about $2-3\; MHz$, however this doesn't have a periodic character. 
+ In Fig.\ref{fig:FCup_Halo_pos_time_dep1} shown time dependence of HPS\_SC (green), 
+ FCup scaler (dashed orange), beam X (dashed blue) and Y (Pink) in a 3 min time interval. Note here instead of plotting FCup
+ measured current value, the FCup scaler value is plotted. This is because with beam blocker
+ the FCup current is small (around $0.9\; nA$), and small current changes are below MYA dead band (it is $0.01$ for this channel).
+ The FCup scaler value is almost linearly proportional to the FCup current, and therefore for correlation purposes 
+ it can be used instead of FCup current.
+ One can note that here also (when the beam blocker is under the beam), 
+ there is a correlation between FCup current and rates on Halo counters, however the correlation
+ now is opposite, i.e. increase of count rates correspond to the increase of FCup current.
+ The explanation for that we think is the following: when fraction of the beam (or entire beam) is interacting
+ with the harp wire, then after the wire the beam is not mono-energetic and parallel anymore, in addition to that
+ the chicane makes that dispersion even bigger, causing some part of the beam electrons escape the blocker and enter into FCUP.
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \begin{figure}[!htb]
+  \centering
+  \grinp[width=0.95\tw]{img/FCup_Blocker_diagram.pdf}
+  \caption{A qualitative description of how the FCup current increase with the presence of the beam blocker,
+  when the beam interacts with a harp wire. Left represents the case when beam is not interacting with any matarial
+  before the beam blocker. Righ figure: beam has interacted with a harp wire.}
+  \label{fig:FCup_blocker_diagram}
+ \end{figure}
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+It is qualitatively illustrated in Fig.\ref{fig:FCup_blocker_diagram}.
+Left drawing represents intact beam case, where almost all the beam hit the blocker, and in the
+right drawing beam has interacted with the harp before, and some of electrons will now miss the beam blocker and enter
+FCUP.
+In Fig.\ref{fig:FCup_Halo_pos_time_dep1} it is hard to see a correlation between beam
+vertical position and the rates on HPS\_SC mainly because the scale of vertical position is relatively large, and
+noise of BPM readings is large w.r.t. average position change.
  
+  The BPM noise level is inversely proportional to the beam current. In the future runnings the nominal 
+ production current should be $\approx 200\;nA$, consequently
+ the spatial resolution of BPMs will be better, that will allow to estimate beam motions more precisely.
+  
   \section{To summarize}
   \begin{itemize}
-  \item Two types of beam motions were observed, fast (roughly $100\; Hz$) and slow that BPMs can detect.
+  
+ \item collimator scan with the beam suggests that collimator $3\;mm$ gap is about $3.45\;mm$. It will
+ more clear when collimator will be removed and gap size measured precisely.
+
+ \item Two types of beam motions were observed, fast (roughly $100\; Hz$) and slow that BPMs can detect.
   With engaged orbit locks the vertical beam motion is mainly within $50\;\mu m$.
   
-  \item sometimes it happens during the trip, or even without trip that the beam moves by more than $100\;\mu m$
-  in at HPS side.
-  
-  \item From analysis of MYA archived data, we learnt that $1\; mm$ thick tungsten harp wire  
- 
- \item collimator scan with the beam suggests that collimator $3\;mm$ gap is about $3.45\;mm$. It will
-more clear when collimator will be removed and gap size measured precisely.
- 
- \item The exact reason for the beam to move or not to move before the trip is not clear,
+ \item Orbit locks keep the beam quite stable, however sometimes it happens during the trip, 
+  or even without trip that the beam moves by more than $100\;\mu m$ at HPS side.
+
+ \item The exact reason for the beam to move or not to move before the trip is not clear.
  Analyzing different trips we didn't find a correlation between the trip type and 
- halo counter behaviors.
- 
+ the behavior of halo counters.
+
+ \item The FSD system was tested, and it seems to work properly.
 
  \end{itemize}
  \end{document}
